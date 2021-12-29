@@ -1,0 +1,107 @@
+@font-face {
+    font-family: 'GowunBatang-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'GowunBatang-Bold';
+}
+
+body {
+    background: #f1f1f1;
+    width: 100%;
+    overflow: hidden;
+    height: 880px;
+}
+button{
+    border-radius: 5px;
+    background-color: white;
+    border: 1px solid darkgrey;
+
+}
+
+button:hover {
+    cursor: pointer;
+    color: white;
+    background-color: darkgrey;
+    transition: 0.2s;
+
+}
+
+.wrep {
+    width: 25%;
+    height: 740px;
+    margin: 100px auto 0 auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+    background: white;
+}
+
+.put_title {
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+.wrep div {
+    margin: 20px auto 30px auto;
+
+}
+
+.wrep div span {
+    display: block;
+    width: 100%;
+    margin-left: 30px;
+}
+
+.wrep div input {
+    border: 1px solid darkgrey;
+    margin-top: 5px;
+    width: 40%;
+    height: 16px;
+    background: #fff;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+    -moz-box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15);
+    box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.15)
+}
+
+.put_nic>button {
+    margin: 10px 10px;
+  
+}
+
+.put_btn {
+    text-align: center;
+}
+.put_btn > button {
+    height: 35px;
+    width: 100px;
+}
+.wrep>:not(4):nth-child() {
+    margin-left: 30px;
+}
+
+#phone2,
+#phone3 {
+    width: 30%;
+}
+
+#sample6_btn {
+    width: 100px;
+    height: 30px;
+}
+
+#sample6_btn:hover {
+    cursor: pointer;
+    color: white;
+    background-color: darkgrey;
+    transition: 0.2s;
+}
+
+.put_in_margin {
+    margin-left: 30px;
+}

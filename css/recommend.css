@@ -1,0 +1,390 @@
+@font-face {
+    font-family: 'GowunBatang-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+    font-family: 'GowunBatang-Bold';
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 2;
+}
+
+/*header*/
+
+.nav {
+    height: 70px;
+    display: flex;
+    background: white;
+}
+
+.nav>h1 {
+    margin: 10px 30px 10px 40px;
+
+
+}
+
+.search_box {
+    background: rgba(250, 250, 250, 1.0);
+    margin-left: 60px;
+}
+
+.search-in {
+    background: rgba(250, 250, 250, 1.0);
+    width: 200px;
+    height: 50px;
+    border: none;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.search-btn {
+    background: rgba(250, 250, 250, 1.0);
+    border: none;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    color: turquoise;
+    transition: 0.2s;
+
+}
+
+.mume {
+    position: relative;
+    left: 200px;
+    display: flex;
+    width: 500px;
+    margin: 0 auto;
+    justify-content: flex-end;
+}
+
+.mume>li {
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.mume>li:hover {
+    cursor: pointer;
+    color: turquoise;
+    transition: 0.2s;
+}
+.mume-store:hover>a {
+    cursor: pointer;
+    color: turquoise;
+    transition: 0.2s;
+}
+.mume-store-list>li>a:hover{
+    cursor: pointer;
+    color: gray;
+    transition: 0.2s;
+}
+/* 네비바 끝 */
+/*mume store drop*/
+.mume-store {
+    display: inline-block;
+    position: relative;
+}
+
+.mume-store-list {
+    position: absolute;
+    display: none;
+    right: -31px;
+    z-index: 2;
+    width: 100px;
+    background-color: rgba(250, 250, 250, 0.5);
+
+}
+
+.displys {
+    display: block;
+}
+
+.mume-store-list>li {
+    margin: 20px auto;
+    text-align: center;
+
+    font-size: 15px;
+}
+/* 본문 */
+.re_wrap{
+    width: 100vw;
+    height: 100vw;
+    background-color: whitesmoke;
+    margin-top: 100px;
+}
+
+/* 캐러셀 구간 */
+.re_carouses{
+    width: 100vw;
+    height: 30vw;
+    position: relative;
+}
+.re_carouses_item{
+    width: 100vw;
+    height: 30vw;
+    display: none;
+}
+.re_carouses_img{
+    width: 100vw;
+    height: 30vw;
+    transition: 400ms;
+}
+.imgative{
+    display: block;
+}
+.re_search{
+    width: 100vw;
+    height: 10vw;
+
+    position: relative;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+.re_search_inp{
+    border-radius: 5px;
+}
+.re_search_box{
+    margin-top: 50px;
+   width: 30vw;
+   position: relative;
+}   
+.sebtn{
+    background-color: white;
+}
+.sebtn:hover{
+    cursor: pointer;
+    color: white;
+    background-color: lightslategrey;
+}
+.re_search_span{
+    margin-top: 2px;
+    position: relative;
+    right: 30px;
+    cursor: pointer;   
+}
+.re_search_span> span:hover {
+    color: lightslategrey;
+}
+.info_Perfume{
+    border: 2px solid lightslategrey ;
+    margin: auto;
+    width: 70vw;
+    height: auto;
+  background-color: white;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+    position: relative;
+}
+.pergume_in{
+    border: 2px solid lightslategrey ;
+    margin: 20px 20px;
+    width: 15vw;
+    height: 20vw;
+    background-color: whitesmoke;
+    position: relative;
+    padding: 5px;
+    cursor: pointer;
+    display: inline-block;
+    justify-content:space-around
+   
+}
+.pergume_out{
+    position: absolute;
+    
+    width: 100%;
+    height: 100%;
+    display: none;
+    animation: on_off 5s infinite;
+}
+@keyframes on_off {
+    50%{
+        background-color: rgba(250, 250, 250, 0.5);
+    }
+    100%{
+        background-color: rgba(250, 250, 250, 0.2);
+    }
+}
+.pergume_in:hover .pergume_out{
+    display: block;
+}
+.pergume_imgbox >img{
+    margin: auto;
+    height: 200px;
+    width: 90%;
+}
+.pergume_name{
+    border-bottom: 1px solid lightslategrey;
+
+}
+#notPergume{
+    display: none;
+    width: 15vw;
+    height: 3vw;
+    border: 1px black solid;
+    padding: 30px;
+    position: absolute;
+    top: 39vw;
+    left: 41vw;
+    opacity: 10;
+    background-color: rgb(207, 207, 207);
+    text-align: center;
+}
+#notPergume>div{
+    margin-top: 10px;
+}
+#notPergume>div>button{
+    width: 40px;
+    height: 30px;
+}
+#notPergume>div>button:hover{
+    background-color: rgb(172, 168, 168);;
+} 
+
+
+
+
+
+
+/* 모달 */
+.model {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(250, 250, 250, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 3;
+
+}
+#model_x{
+   float: left;
+   position: relative;
+   left: 93%;
+   border-radius: 7px;
+   border: none;
+   cursor: pointer;
+   background: rgba(250, 250, 250, 0.5);
+}
+
+.model_login {
+    position: absolute;
+    top: 230px;
+    left: 740px;
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+}
+
+.login_title {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.id_in {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.input_con {
+    width: 80%;
+    height: 30px;
+    position: relative;
+    left: 32px;
+    margin: 15px auto;
+    border-radius: 7px;
+    border-color: white;
+}
+
+.remember-me {
+    padding: 50px;
+    margin: 10px auto;
+    position: relative;
+    left: 32px;
+}
+
+.remember-txt {
+    position: relative;
+    left: 32px;
+}
+
+.login_btn {
+    position: absolute;
+    bottom: 80px;
+    left: 42px;
+    width: 320px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.lnfo_btn {
+    position: absolute;
+    bottom: 30px;
+    left: 42px;
+    width: 320px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.btns {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btns:hover {
+    color: white;
+    background-color: #007bff8e;
+    transition: 0.2s;
+}
+.model_show{
+    display: block;
+}
+.body_flow{
+    overflow-y: hidden;
+}
+/* 모달구간 끝 */
+footer {
+    
+    display: flex;
+}
+
+footer>div:first-child {
+    flex: 3;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer>div:last-child {
+    flex: 9;
+    margin: 20px;
+    line-height: 22px;
+}

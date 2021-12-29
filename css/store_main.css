@@ -1,0 +1,449 @@
+@font-face {
+    font-family: 'GowunBatang-Bold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunBatang-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+    border-collapse: collapse;
+    margin: 0px;
+    padding: 0px;
+    color: #000;
+    font-family: 'GowunBatang-Bold';
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    z-index: 2;
+}
+
+/*header*/
+
+.nav {
+    height: 70px;
+    display: flex;
+    background: white;
+}
+
+.nav>h1 {
+    margin: 10px 30px 10px 40px;
+
+
+}
+
+.search_box {
+    background: rgba(250, 250, 250, 1.0);
+    margin-left: 60px;
+}
+
+.search-in {
+    background: rgba(250, 250, 250, 1.0);
+    width: 200px;
+    height: 50px;
+    border: none;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.search-btn {
+    background: rgba(250, 250, 250, 1.0);
+    border: none;
+    height: 50px;
+    width: 100px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    color: turquoise;
+    transition: 0.2s;
+
+}
+
+.mume {
+    position: relative;
+    left: 200px;
+    display: flex;
+    width: 500px;
+    margin: 0 auto;
+    justify-content: flex-end;
+}
+
+.mume>li {
+    margin-left: 50px;
+    margin-top: 25px;
+}
+
+.mume>li:hover {
+    cursor: pointer;
+    color: turquoise;
+    transition: 0.2s;
+}
+.mume-store:hover>a {
+    cursor: pointer;
+    color: turquoise;
+    transition: 0.2s;
+}
+.mume-store-list>li>a:hover{
+    cursor: pointer;
+    color: gray;
+    transition: 0.2s;
+}
+
+/*mume store drop*/
+.mume-store {
+    display: inline-block;
+    position: relative;
+}
+
+.mume-store-list {
+    position: absolute;
+    display: none;
+    right: -31px;
+    z-index: 2;
+    width: 100px;
+    background-color: rgba(250, 250, 250, 0.5);
+
+}
+
+.displys {
+    display: block;
+}
+
+.mume-store-list>li {
+    margin: 20px auto;
+    text-align: center;
+
+    font-size: 15px;
+}
+
+aside {
+    position: fixed;
+    float: left;
+    width: 200px;
+    opacity: 0.9;
+}
+
+section {
+    float: left;
+    width: 100%;
+    height: auto;
+    margin: 0px auto;
+}
+
+.store_main_list {
+    width: 100%;
+    height: 654px;
+    font-weight: bold;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 70px;
+    /* border-right: 1px solid lightgray; */
+    padding-top: 80px;
+
+    
+
+}
+aside >ul > li:hover{
+    cursor: pointer;
+    color: turquoise;
+    transition: 0.2s;
+}
+
+.store_main_list_mu {
+    font-size: 15px;
+    margin-bottom: 30px;
+   
+}
+
+.store_main_list_mu:first-child {
+    margin-top: 30px;
+}
+
+/*section*/
+.store_com {
+    margin: 70px 0 70px 0;
+    width: 100%;
+    height: 300px;
+    background-color: #f1f1f1;
+ 
+}
+
+.store_com_title {
+  position: absolute;
+  left: 52.5%;
+  top: 23%;
+}/* 스토어 상단 이름 끝*/
+
+/*스토어 분류 */
+.product-div{
+    width: 300px;
+    height: 30px;
+    position: absolute;
+    top: 410px;
+    left: 80%;
+    margin-bottom: 100px;
+     float: left;
+}
+.product-div div{
+    display: inline-block;
+    margin-left: 20px;
+    font-size: 15px;
+}
+.product-div div:hover{
+    animation-name: blink;
+    animation-duration: 3.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    cursor: pointer;
+}
+
+@keyframes blink {
+    from {
+        color: beige;
+    }
+
+    50% {
+        color: gray;
+    }
+
+    to {
+        color: black;
+        font-weight: bold;
+    }
+
+}
+/*스토어 분류 끝*/
+.product{
+    position: relative;
+    width: 100vw;
+    height: auto;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content:flex-start;
+    left: 110px;
+    
+}
+.product-list{
+   
+    display: inline-block;
+    width: 250px;
+    height: auto;
+    margin: 50px 100px 50px 100px;
+    border: 1px solid lightgrey;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+}
+.product-list img{
+    width: 100%;
+    height: 250px;
+}
+.product-name {
+    text-align: center;
+    border-top: 1px lightgrey solid;
+}
+
+.product-price {
+    text-align: right;
+    border-top: 1px lightgrey solid;
+}
+
+.product-btn {
+    text-align: right;
+    border-top: 1px lightgrey solid;
+    height: 30px;
+    padding-top: 5px;
+}
+
+.product-btn>button {
+    background: rgba(250, 250, 250, 1.0);
+    border: none;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.product-btn>button:hover {
+    color: turquoise;
+    transition: 0.2s;
+
+}
+
+.name>a:hover {
+    animation-name: blink;
+    animation-duration: 3.5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+}
+
+@keyframes blink {
+    from {
+        color: beige;
+    }
+
+    50% {
+        color: gray;
+    }
+
+    to {
+        color: black;
+        font-weight: bold;
+    }
+
+}
+
+.product-btn-box {
+    width: 200px;
+    margin: 30px auto;
+    text-align: center;
+    position: relative;
+    left: 80px;
+    margin-bottom: 100px;
+}
+
+.product-btn-ing {
+    width: 100px;
+    height: 40px;
+    background-color: rgba(250, 250, 250, 0.1);
+    border: 1px solid gray;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    margin: 20px auto 20px auto;
+
+}
+
+.product-btn-ing:hover {
+    color: white;
+    background-color: darkgrey;
+    transition: 0.2s;
+    
+}
+
+/* 모달구간 */
+.model {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(250, 250, 250, 0.5);
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 3;
+
+}
+#model_x{
+   float: left;
+   position: relative;
+   left: 93%;
+   border-radius: 7px;
+   border: none;
+   cursor: pointer;
+   background: rgba(250, 250, 250, 0.5);
+}
+
+.model_login {
+    position: absolute;
+    top: 230px;
+    left: 740px;
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+}
+
+.login_title {
+    text-align: center;
+    margin: 50px auto;
+}
+
+.id_in {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.input_con {
+    width: 80%;
+    height: 30px;
+    position: relative;
+    left: 32px;
+    margin: 15px auto;
+    border-radius: 7px;
+    border-color: white;
+}
+
+.remember-me {
+    padding: 50px;
+    margin: 10px auto;
+    position: relative;
+    left: 32px;
+}
+
+.remember-txt {
+    position: relative;
+    left: 32px;
+}
+
+.login_btn {
+    position: absolute;
+    bottom: 80px;
+    left: 42px;
+    width: 320px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.lnfo_btn {
+    position: absolute;
+    bottom: 30px;
+    left: 42px;
+    width: 320px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    border-radius: 7px;
+}
+
+.btns {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btns:hover {
+    color: white;
+    background-color: #007bff8e;
+    transition: 0.2s;
+}
+.model_show{
+    display: block;
+}
+.body_flow{
+    overflow-y: hidden;
+}
+/* 모달구간 끝 */
+
+/*foorer*/
+footer {
+    width: 100%;
+    display: flex;
+}
+
+footer>div:first-child {
+    flex: 3;
+    text-align: center;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+footer>div:last-child {
+    flex: 9;
+    margin: 20px;
+    line-height: 22px;
+}

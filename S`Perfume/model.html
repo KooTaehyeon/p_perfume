@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <style>
+        .model {
+            position: absolute;
+            top: 0;
+            left: 0;
+            background: rgba(250, 250, 250, 0.5);
+            width: 100%;
+            height: 100%;
+            display: none;
+        }
+
+        .model_login {
+            position: absolute;
+            top: 230px;
+            left: 740px;
+            width: 400px;
+            height: 500px;
+
+            border-radius: 7px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.9);
+        }
+
+        .login_title {
+            text-align: center;
+            margin: 50px auto;
+        }
+
+        .id_in {
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+
+        .input_con {
+            width: 80%;
+            height: 30px;
+            position: relative;
+            left: 32px;
+            margin: 15px auto;
+            border-radius: 7px;
+            border-color: white;
+        }
+
+        .remember-me {
+            padding: 50px;
+            margin: 10px auto;
+            position: relative;
+            left: 32px;
+        }
+
+        .remember-txt {
+            position: relative;
+            left: 32px;
+        }
+
+        .login_btn {
+            position: absolute;
+            bottom: 80px;
+            left: 42px;
+            width: 320px;
+            height: 40px;
+            border: none;
+            cursor: pointer;
+            border-radius: 7px;
+        }
+
+        .lnfo_btn {
+            position: absolute;
+            bottom: 30px;
+            left: 42px;
+            width: 320px;
+            height: 40px;
+            border: none;
+            cursor: pointer;
+            border-radius: 7px;
+        }
+
+        .btns {
+            background-color: #007bff;
+            border-color: #007bff;
+        }
+
+        .btns:hover {
+            color: white;
+            background-color: #007bff8e;
+            transition: 0.2s;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="model" id="model">
+        <div class="model_login">
+            <h2 class="login_title">로그인</h2>
+            <div class="id_in">
+                <h3 class="login_title">회원 정보를 입력하세요</h5>
+                    <form action="#" class="form_con">
+                        <input type="text" class="input_con" placeholder="아이디를 입력하세요">
+                        <input type="password" class="input_con" placeholder="비밀번호를 입력하세요">
+                        <br>
+                        <input type="checkbox" value="저장" class="remember-me">
+                        <span class="remember-txt">저장하기</span>
+
+                        <button id="#" class="login_btn btns" type="submit">로 그 인</button>
+                    </form>
+                   <a href=""> <button id="#" class="lnfo_btn btns" type="button">회원가입</button></a>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
