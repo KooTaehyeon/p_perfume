@@ -40,7 +40,6 @@ const re_car = function reCarouses() {
             next = next + 1;
         
             if(next == re_carouses.length){
-                console.log('오니');
                 next=0;
             }
             re_carouses[next].classList.add('imgative');
@@ -69,21 +68,18 @@ function filters(){
         }else if(searchs.value.length == 1){
             alert('두글자 이상 적어주세요.')
             return;
-        }else if(!pergumeName[i].innerText.includes(`${searchs.value}`) || content[i].innerText.includes(`${searchs.value}` )){
-            notPergume.style.display = 'block';
-
         }else if(pergumeName[i].innerText.includes(`${searchs.value}`) || content[i].innerText.includes(`${searchs.value}` )){
-            lists[i].style.display= "block";
-            notPergume.style.display = 'none';
+            lists[i].style.display = 'block';
         }else{
             lists[i].style.display= "none";
+            
         }
     }
 }
 
-notBtn.onclick= function(){
-    notPergume.style.display = 'none';
-}
+// notBtn.onclick= function(){
+//     notPergume.style.display = 'none';
+// }
 // 키워드 필터
 const keyword = document.querySelectorAll(".re_search_span>span");
 const keyName = document.querySelectorAll(".pergume_name");
